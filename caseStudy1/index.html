@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src = "assets/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="image/logo.png" alt="" width="50" height="50" class="d-inline-block align-top rounded-circle">
+                <span class="fw-normal">Trung Quân</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#skill">Skill</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#project">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- container -->
+    <div class="container ">
+        <div class="row" id="home">
+            <div class="col-lg-7 ">  <!-- Chia làm hai cột: 7 và 5 -->
+                <p>WELCOME TO MY PROFILE</p>
+                <h1 class="title">    
+                    Hi, I'm Tquandoo <br>
+                    a
+                    <div class="gradientText">
+                        <div class="job"
+                            data-job1 = "{Developer.}"
+                            data-job2 = "{FrondEnd.}">
+                        </div>
+                    </div>
+                </h1>
+                <p class="my-5">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem officia nesciunt nobis alias suscipit perferendis sapiente harum, expedita inventore quasi? Quod omnis assumenda provident iusto voluptates accusantium pariatur facere expedita dolores, accusamus non fugit commodi repellat asperiores aspernatur earum ratione.
+                </p>
+                <h3>CONTACT WITH ME</h3>
+                <ul class="list-unstyled d-flex"> <!-- Sử dụng d-flex để biến thành flexbox và list-unstyled để loại bỏ danh sách style -->
+                    <li class=" item"> <!-- me-3 để thêm khoảng cách bên phải -->
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </li>
+                    <li class="item">
+                        <i class="fa-brands fa-instagram"></i>
+                    </li>
+                    <li class="item">
+                        <i class="fa-brands fa-twitter"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-5 text-center justify-content-center d-flex avatar">
+                <img src="image/avatar2.png" class="img-fluid" alt="Profile Image">
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5" id="skill">
+        <h2 class="text-center mb-5 fs-4">SKILL</h2>
+        <div class="row">
+            <!-- HTML5 Skill -->
+            <div class="col-md-6 mb-3 "> <!-- We use col-md-6 to split the skills into 2 columns on medium screens and up -->
+                <h4 class="">HTML5</h4>
+                <div class="progress customProgress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+    
+            <!-- CSS3 Skill -->
+            <div class="col-md-6 mb-3 ">
+                <h4>CSS3</h4>
+                <div class="progress customProgress">
+                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+    
+            <!-- JavaScript Skill -->
+            <div class="col-md-6 mb-3 ">
+                <h4 class="">JavaScript</h4>
+                <div class="progress customProgress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+    
+            <!-- Bootstrap 5 Skill -->
+            <div class="col-md-6 mb-3 ">
+                <h4>Bootstrap 5</h4>
+                <div class="progress customProgress">
+                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-3 ">
+                <h4>ReactJS</h4>
+                <div class="progress customProgress">
+                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-3 ">
+                <h4>database</h4>
+                <div class="progress customProgress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-3 ">
+                <h4>UI/UX</h4>
+                <div class="progress customProgress">
+                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-3 ">
+                <h4>VueJs</h4>
+                <div class="progress customProgress">
+                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+    <!-- project -->
+
+    <div class="container mt-5" id="project">
+        <h2 class="text-center mb-4">PROJECT</h2>
+        <div class="row">
+            <div class="col-xl-4 col-md-6 col-12">
+                <div class="card d-flex justify-content-center align-items-center ">
+                    <img src="image/img1.jpg" class="card-img-top" alt="Name Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Name Project 1</h5>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-xl-4 col-md-6 col-12">
+                <div class="card d-flex justify-content-center align-items-center"">
+                    <img src="image/img2.jpg" class="card-img-top" alt="Name Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Name Project 2</h5>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Repeat for other projects... -->
+    
+            <div class="col-xl-4 col-md-6 col-12">
+                <div class="card d-flex justify-content-center align-items-center"">
+                    <img src="image/img3.jpg" class="card-img-top" alt="Name Project 6">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Name Project 6</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-12">
+                <div class="card d-flex justify-content-center align-items-center"">
+                    <img src="image/img4.jpg" class="card-img-top" alt="Name Project 6">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Name Project 6</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-12">
+                <div class="card d-flex justify-content-center align-items-center">
+                    <img src="image/img5.jpg" class="card-img-top" alt="Name Project 6">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Name Project 6</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-12">
+                <div class="card d-flex justify-content-center align-items-center">
+                    <img src="image/img6.jpg" class="card-img-top" alt="Name Project 6">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Name Project 6</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+
+    <div class="container mt-5" id="contact">
+        <h2 class="text-start fs-4">Contact</h2>
+      <ul class="list-unstyled d-flex align-items-center justify-content-center me-5 ">
+        <li class=" item"> <!-- me-3 để thêm khoảng cách bên phải -->
+            <i class="fa-brands fa-facebook-f"></i>
+        </li>
+        <li class="item">
+            <i class="fa-brands fa-instagram"></i>
+        </li>
+        <li class="item">
+            <i class="fa-brands fa-twitter"></i>
+        </li>
+      </ul>
+    </div>
+    
+</body>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+</html>
